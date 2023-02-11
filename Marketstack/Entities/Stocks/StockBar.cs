@@ -25,6 +25,12 @@ namespace Marketstack.Entities.Stocks
 
         [JsonProperty("adj_volume")]
         public float? AdjVolume { get; set; }
+
+        public float? Dividend { get; set; }
+
+        [JsonProperty("split_factor")]
+        public float? SplitFactor { get; set; }
+
         public string Symbol { get; set; }
         public string Exchange { get; set; }
         public DateTime Date { get; set; }
